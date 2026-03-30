@@ -42,15 +42,16 @@ public class Basetest {
 		prop.load(fis);
 		String browsername = System.getProperty("browser")!=null ? System.getProperty("browser") :prop.getProperty("browser");
 		
-		if(browsername.contains("chrome")){
-			ChromeOptions options = new ChromeOptions();	
+		if(browsername.equalsIgnoreCase("chrome")){
+			//ChromeOptions options = new ChromeOptions();	
 		  WebDriverManager.chromedriver().setup();
-		if(browsername.contains("headless")){
-		options.addArguments("headless");
+		//if(browsername.contains("headless")){
+		//options.addArguments("headless");
+			 driver = new ChromeDriver();
+
 		}
-		 driver = new ChromeDriver(options);
 		 //driver.manage().window().setSize(new Dimension(1440,900));
-		}
+		
 		else if (browsername.equalsIgnoreCase("firefox"))
 			
 		{
