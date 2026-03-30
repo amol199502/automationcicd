@@ -21,11 +21,11 @@
     <!-- ================= DEPENDENCIES ================= -->
     <dependencies>
 
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>${selenium.version}</version>
-        </dependency>
+        <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.9.0</version>
+    <scope>test</scope>
+</dependency>
 
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
